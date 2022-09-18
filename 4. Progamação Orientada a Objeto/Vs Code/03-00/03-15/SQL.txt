@@ -1,0 +1,30 @@
+CREATE DATABASE IF NOT EXISTS aula24;
+
+USE aula24;
+
+
+CREATE TABLE aluno (
+	matricula integer(7),
+	nomeA varchar(30),
+	email varchar(50),
+	idade integer(3),
+	sexo varchar(1)
+);
+
+CREATE TABLE curso (
+	idcurso int(5),
+	nomeC varchar(30)
+);
+
+CREATE TABLE curso_aluno (
+	mat_Aluno integer(7),
+	id_Curso int(5)
+);
+
+
+ALTER TABLE aluno ADD PRIMARY KEY(matricula);
+ALTER TABLE curso ADD PRIMARY KEY(idcurso);
+
+ALTER TABLE curso_aluno ADD FOREIGN KEY(mat_Aluno) REFERENCES aluno (matricula);
+ALTER TABLE curso_aluno ADD FOREIGN KEY(id_Curso) REFERENCES curso (idcurso);
+

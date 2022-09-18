@@ -1,0 +1,21 @@
+public class Desvio {
+    public static void main(String[] args ){
+        int x =4;
+        int y =4;
+
+        if(x ==3){
+            System.out.println("x é igual a 3");
+
+ }
+ if(x > 3 && x < 7 ){
+          System.out.println("x é maior que 3 e menor que 7");
+
+ }
+ if((x > 3) && ( x < 7 ) || (y < 3)) {
+        System.out.println("x é maior que 3 e menor que 7 ou y menor que 3");
+ }
+ if(!(x == 3 )){
+    System.out.println("x é não é igual 3");
+  }
+}
+}

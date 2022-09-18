@@ -1,0 +1,39 @@
+DROP DATABASE IF EXISTS Escola;
+CREATE DATABASE Escola;
+use Escola;
+
+
+#TABELAS
+CREATE TABLE Turma(
+	codigoT INT(7) AUTO_INCREMENT,
+	sala VARCHAR(10) NOT NULL,
+	horario VARCHAR(5),
+	PRIMARY KEY(codigoT));
+
+CREATE TABLE Aluno(
+	matricula INT(10) AUTO_INCREMENT,
+	nome VARCHAR(50) NOT NULL,
+	PRIMARY KEY(matricula));
+
+CREATE TABLE Professor(
+	codigoP INT(5) AUTO_INCREMENT,
+	nome VARCHAR(50) NOT NULL,
+	titulação VARCHAR(20),
+	PRIMARY KEY(codigoP));
+
+
+#TABELAS 02
+CREATE TABLE Aluno_Turma(
+  	mat_Aluno int(10),
+  	cod_Turma INT(7));
+
+ALter table Aluno_Turma ADD CONSTRAINT fk_Aluno_Turma FOREIGN KEY (mat_Aluno) REFERENCES Aluno (matricula);
+ALter table Aluno_Turma ADD CONSTRAINT fk_Turma_Aluno FOREIGN KEY (cod_Turma) REFERENCES Turma (codigoT);
+
+
+CREATE TABLE Professor_Turma(
+  	cod_Turma int(7),
+  	cod_Prof INT(5));
+
+ALter table Professor_Turma ADD CONSTRAINT fk_Professor_Turma FOREIGN KEY (cod_Turma) REFERENCES Turma (codigoT);
+ALter table Professor_Turma ADD CONSTRAINT fk_Turma_Professor FOREIGN KEY (cod_Prof) REFERENCES Professor (codigoP);

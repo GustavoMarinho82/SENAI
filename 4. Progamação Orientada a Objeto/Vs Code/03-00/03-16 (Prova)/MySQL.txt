@@ -1,0 +1,11 @@
+CREATE DATABASE Prova;
+USE Prova;
+
+
+CREATE TABLE funcionario (
+  id INTEGER (5),
+  dataAdmissao VARCHAR(10),
+  salario DOUBLE,
+  especialidade VARCHAR(25),
+  	PRIMARY KEY (id)
+);

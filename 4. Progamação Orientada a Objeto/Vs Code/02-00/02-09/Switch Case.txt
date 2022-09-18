@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class gustavo {
+    public static void main(String args[]) {
+    int x = 1;
+
+        Scanner abc = new Scanner(System.in);
+        System.out.println(" Digite um valor até 3");
+        x = abc.nextInt();
+
+    switch (x){
+        case 1:
+        System.out.println("x = 1");
+        break;
+
+        case 2:
+        System.out.println("x = 2");
+        break;
+        
+        case 3:
+        System.out.println("x = 3");
+        break;
+        }
+        
+    abc.close();
+    }
+}

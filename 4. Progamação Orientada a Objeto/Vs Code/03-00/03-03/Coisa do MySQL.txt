@@ -1,0 +1,23 @@
+CREATE DATABASE loja_virtual;
+use loja_virtual;
+CREATE TABLE produtos(
+	id int AUTO_INCREMENT,
+	nome VARCHAR(50) NOT NULL,
+	descricao VARCHAR(255),
+	PRIMARY KEY(id));
+
+INSERT INTO produtos
+	(nome, descricao)
+values
+	('teclado', 'teclado ergonométrico hayom'),
+	('HD externo','HD externo SAMSUNG'),
+	('Mouse','Mouse optico wirelles Microsoft'),
+	('WEB Cam','WEB CAM Xiaomi'),
+	('Celular', 'Celular Poco 3 Xiaomi'),
+	('Pen Drive', 'Pen Drive Kingston 32 GB'),
+	('Cartão de memória', 'Cartão de memória Samsung 64 GB'),
+	('Caixa de Som', 'Caixa de Som Marvo');
+
+
+
+//Senha: alunolab
