@@ -1,0 +1,4 @@
+Avaliação final!
+     Entrega:
+            Um bloco de notas com os código de DDL e DML.
+            Um vídeo apresentando os  passos de 1 a 11.

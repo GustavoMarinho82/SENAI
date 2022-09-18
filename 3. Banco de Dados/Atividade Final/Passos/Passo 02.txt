@@ -1,0 +1,11 @@
+/* PASSO 02
+A consulta do médico 1 com o paciente 4 passou para às 12:00 horas 
+do dia 4 de julho de 2006
+*/
+
+SELECT * FROM Consultas;
+
+UPDATE Consultas SET Hora_Cons = '12:00', Data_Cons = '2006-07-04'
+WHERE Cod_M = 1 AND Cod_P = 4;
+
+SELECT * FROM Consultas;

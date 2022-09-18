@@ -1,0 +1,10 @@
+/* PASSO 01
+O paciente Paulo mudou-se para Ilhota
+*/
+
+SELECT * FROM Pacientes;
+
+UPDATE Pacientes SET Cidade_P = 'Ilhota'
+WHERE Nome_P = 'Paulo';
+
+SELECT * FROM Pacientes;

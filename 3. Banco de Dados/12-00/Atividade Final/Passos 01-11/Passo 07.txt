@@ -1,0 +1,17 @@
+/* PASSO 07
+Os pacientes com câncer ou idade inferior a 10 anos deixaram a clínica
+*/
+
+SELECT * FROM Pacientes;
+SELECT * FROM Consultas;
+
+
+DELETE FROM Consultas 
+WHERE Cod_P = 1;
+
+DELETE FROM Pacientes
+WHERE Doenca_P = 'cancer' OR Idade_P < 9;
+
+
+SELECT * FROM Pacientes;
+SELECT * FROM Consultas;

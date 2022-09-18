@@ -1,0 +1,28 @@
+CREATE TABLE Aluno (
+  Cod_A Char(5),         #Codigo do aluno (100*3)
+  Nome_A Varchar(255),   #Nome do aluno
+  Cod_C Char(3),         #Codigo do curso do aluno (111)
+  PRIMARY Key (Cod_A)
+);
+
+
+CREATE TABLE Curso (
+  Cod_C Char(3),         #Codigo do Curso (111)
+  Nome_C VArchar(255),   #Nome do Curso
+  Cod_A Char(5),         #Codigo do aluno do curso (100*3)
+  PRIMARY Key (Cod_C)
+);
+
+
+ALTER TABLE Aluno ADD FOREIGN KEY (Cod_C) REFERENCES Curso (Cod_C);
+ALTER TABLE Curso ADD FOREIGN KEY (Cod_A) REFERENCES Aluno (Cod_A);
+
+ALTER TABLE Curso ADD Decricao_C VARCHAR(255);
+ALTER TABLE Curso MODIFY Descricao_C VARCHAR(80);
+
+ALTER TABLE Curso CHANGE Descricao_C Descricao VARCHAR(80);
+ALTER TABLE Curso CHANGE Descricao Descricao VARCHAR(80);
+
+
+RENAME TABLE Aluno to aluno;
+RENAME TABLE Curso to curso

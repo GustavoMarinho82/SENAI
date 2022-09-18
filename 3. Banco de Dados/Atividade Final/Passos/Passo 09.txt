@@ -1,0 +1,7 @@
+/* PASSO 09
+Monte a junção com os dados das tabelas médico e paciente
+*/
+
+SELECT * FROM Medicos m
+INNER JOIN Pacientes p
+ON m.CPF_M = p.CPF_P;

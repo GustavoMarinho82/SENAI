@@ -1,0 +1,10 @@
+/* PASSO 05
+O funcionário Carlos (codf = 4) deixou a clínica
+*/
+
+SELECT * FROM Funcionarios;
+
+DELETE FROM Funcionarios
+WHERE Cod_F = 4;
+
+SELECT * FROM Funcionarios;

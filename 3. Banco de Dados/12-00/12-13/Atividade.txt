@@ -1,0 +1,30 @@
+#TABELAS
+
+DROP TABLE demo;
+
+CREATE TABLE Professor (
+  Nome_P VARCHAR(255),
+  Fone integer(255),
+  CPF integer(255),
+  PRIMARY KEY (CPF)
+);
+
+
+CREATE TABLE Disciplina (
+  Nome_D VARCHAR(255),
+  Cod_disciplina Integer(255),
+  PRIMARY KEY (Cod_disciplina)
+);
+
+
+CREATE TABLE leciona (
+  Dia_semana VARCHAR(255),
+  Cod_disciplina Integer(255),
+  CPF integer(255)
+);
+
+
+#CHAVES ESTRANGEIRAS
+
+ALTER TABLE leciona ADD FOREIGN KEY (Cod_disciplina) REFERENCES Disciplina (Cod_disciplina);
+ALTER TABLE leciona ADD FOREIGN KEY (CPF) REFERENCES Professor (CPF)

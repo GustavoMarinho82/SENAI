@@ -1,0 +1,10 @@
+/* PASSO 10
+Monte uma junção a esquerda para médico e paciente trazendo as datas da consulta
+*/
+
+SELECT m.*, p.*, c.data_cons FROM Consultas c
+INNER JOIN Pacientes p
+
+LEFT JOIN Medicos m
+ON m.Cod_M = c.Cod_M
+WHERE p.Cod_P = c.Cod_P

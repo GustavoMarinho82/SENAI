@@ -1,0 +1,7 @@
+#VISUALIZACAO
+
+SELECT * FROM Ambulatorios;
+SELECT * FROM Medicos;
+SELECT * FROM Pacientes;
+SELECT * FROM Funcionarios;
+SELECT * FROM Consultas;

@@ -1,0 +1,10 @@
+/* PASSO 03
+A paciente Ana fez aniversário e sua doença agora é câncer
+*/
+
+SELECT * FROM Pacientes;
+
+UPDATE Pacientes SET Idade_P = Idade_P + 1, Doenca_P = 'cancer'
+WHERE Nome_P = 'Ana';
+
+SELECT * FROM Pacientes;

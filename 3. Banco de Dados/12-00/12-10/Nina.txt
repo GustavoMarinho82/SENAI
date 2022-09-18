@@ -1,0 +1,7 @@
+DECIMAL(n,c)
+
+n = numero
+c = casas decimais
+
+show database
+create database henrique

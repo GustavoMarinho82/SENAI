@@ -1,0 +1,66 @@
+#TABELAS
+
+CREATE TABLE Ambulatorios (
+  Nroa INT AUTO_INCREMENT,
+  Andar_A NUMERIC (3) NOT NULL,
+  Capacidade_A SMALLINT,
+  PRIMARY KEY (Nroa)
+);
+
+
+CREATE TABLE Medicos (
+  Cod_M INT AUTO_INCREMENT,
+  Nome_M VARCHAR (40) NOT NULL,
+  Idade_M SMALLINT NOT NULL,
+  Especialidade_M CHAR (20),
+  CPF_M NUMERIC (11) UNIQUE,
+  Cidade_M VARCHAR (30),
+  Nroa INT,
+  PRIMARY KEY (Cod_M),
+  FOREIGN KEY (Nroa) REFERENCES Ambulatorios (Nroa)
+);
+
+
+CREATE TABLE Pacientes (
+  Cod_P INT AUTO_INCREMENT,
+  Nome_P VARCHAR (40) NOT NULL,
+  Idade_P SMALLINT NOT NULL,
+  Cidade_P CHAR (30),
+  CPF_P NUMERIC (11) UNIQUE,
+  Doenca_P VARCHAR (40) NOT NULL,
+  PRIMARY KEY (Cod_P)
+);
+
+
+CREATE TABLE Funcionarios (
+  Cod_F INT AUTO_INCREMENT,
+  Nome_F VARCHAR (40) NOT NULL,
+  Idade_F SMALLINT NOT NULL,
+  CPF_F NUMERIC (11) UNIQUE,
+  Cidade_F VARCHAR (30),
+  Salario_F NUMERIC (10),
+  Cargo_F VARCHAR (20),
+  PRIMARY KEY (Cod_F)
+);
+
+
+CREATE TABLE Consultas (
+  Cod_M INT,
+  Cod_P INT,
+  Data_Cons Date,
+  Hora_Cons TIME,
+  FOREIGN KEY (Cod_M) REFERENCES Medicos (Cod_M),
+  FOREIGN KEY (Cod_P) REFERENCES Pacientes (Cod_P)
+);
+
+
+DROP TABLE demo;
+
+/*  MUDANCAS:
+
+1. Nas Chaves Primarias foi adicionado o AUTO_INCREMENT, para agilizar os processos;
+2. Os nomes de varias colunas foram alterados, para evitar ambiguidades e para melhorar a visualizacao;
+3. A coluna "Idade_F" em "Funcionarios" nao aceita mais valores nulos, igual a "Idade_M" em "Medicos" e "Idade_P" em "Pacientes";
+4. A coluna "Cod_M" em "Consultas" virou Chave Estrangeira, porque que ela faz referencia a tabela "Medicos".
+
+*/

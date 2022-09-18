@@ -1,0 +1,10 @@
+/* PASSO 06
+As consultas marcadas após as 19 horas foram canceladas
+*/
+
+SELECT * FROM Consultas;
+
+DELETE FROM Consultas
+WHERE Hora_Cons>'19:00';
+
+SELECT * FROM Consultas;

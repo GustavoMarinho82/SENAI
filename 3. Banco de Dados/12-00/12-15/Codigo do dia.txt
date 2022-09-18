@@ -1,0 +1,25 @@
+Create table Cliente (
+  Id Int AUTO_INCREMENT,
+  Nome VArchar (255),
+  Data_Nasc Date,
+  Data_Criacao Timestamp,
+  Data_Atualizacao Timestamp,
+  Primary key (Id)
+);
+
+
+Drop table demo;
+
+insert into 
+Cliente (Nome, data_nasc, data_criacao) 
+Values ('Joao Gabriel Marinho Itajair', '2007-07-21', now());
+
+Update Cliente set Nome='Joao Gabriel', data_atualizacao=now() 
+where (Nome='Joao Gabriel Marinho Itajair');
+
+
+delete from Cliente where Nome='Joao Gabriel Marinho Itajair';
+
+#DELETE FROM Cliente;
+
+SELECT * from Cliente;

@@ -1,0 +1,11 @@
+/* PASSO 04
+A consulta do médico Pedro (codf = 3) com o paciente Carlos (codf = 4) passou para uma
+hora e meia depois
+*/
+
+SELECT * FROM Consultas;
+
+UPDATE Consultas SET Hora_Cons = '14:30'
+WHERE Cod_M = 3 AND Cod_P = 4;
+
+SELECT * FROM Consultas;

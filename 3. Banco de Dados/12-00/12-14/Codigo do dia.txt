@@ -1,0 +1,34 @@
+CREATE table Aluno (
+  Cod_Alu integer,
+  Nome_Alu Varchar(100),
+  Cod_Cur integer,
+  Primary Key (Cod_Alu)
+);
+
+
+CREATE TABLE Curso (
+  Cod_Cur integer,
+  Nome_Cur Varchar (50),
+  primary key (Cod_Cur)
+);
+
+alter table Aluno add CONSTRAINT fk_aluno_curso foreign key (cod_cur) references Curso(cod_cur);
+
+drop TABLE demo;
+
+alter TABLE Aluno drop foreign key fk_aluno_curso;
+alter TABLE Aluno drop index fk_aluno_curso;
+alter TABLE Aluno drop cod_cur;
+
+
+create TABLE faz (
+  cod_alu Int,
+  cod_cur Int
+);
+
+
+Alter table faz add CONSTRAINT fk_possui_aluno 
+Foreign key (cod_alu) references Aluno(cod_alu);
+
+ALter table faz add CONSTRAINT fk_possui_curso
+Foreign key (cod_cur) references Curso(cod_cur)

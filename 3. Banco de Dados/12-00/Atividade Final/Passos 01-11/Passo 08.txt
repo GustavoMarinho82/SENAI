@@ -1,0 +1,16 @@
+/* PASSO 08
+Os médicos que residem em Biguacu e Palhoca deixaram a clínica
+*/
+
+SELECT * FROM Medicos;
+SELECT * FROM Consultas;
+
+
+DELETE FROM Consultas
+WHERE Cod_M = 5;
+
+DELETE FROM Medicos
+WHERE Cidade_M = 'Biguacu' or 'Palhoca';
+
+SELECT * FROM Medicos;
+SELECT * FROM Consultas;
