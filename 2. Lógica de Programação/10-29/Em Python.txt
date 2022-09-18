@@ -1,0 +1,15 @@
+base=1
+altura=1
+area=0
+
+
+print("Descubra a Área do Triângulo \n")
+
+while (base>0 and altura>0):
+    base= int(input("Digite a base \n"))
+    altura= int(input("Digite a altura \n"))
+    
+    area= (base*altura)/2
+    print("A área do triângulo é: ", area, "\n----------------------\n \n")
+else:
+    print("DADOS INVÁLIDOS")

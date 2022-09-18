@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+      int [][] Matriz=  {   {0,0,0,0}, {0,0,0,0}, {0,0,0,0}   };
+
+    Scanner abc = new Scanner(System.in);
+    
+    for(int x=0; x<3; x++){
+        for(int y=0; y<4; y++){
+    
+        System.out.println("Linha: " + (x+1) + " | Coluna: " + (y+1));
+        System.out.println("Digite o valor");
+          Matriz[x][y] = abc.nextInt();
+    
+    }}
+    
+    for(int x=0; x<3; x++){
+        for(int y=0; y<4; y++){
+    
+        if (y==0) {System.out.println("");}
+    
+        if (Matriz[x][y]<0) {Matriz[x][y]=0;}
+        System.out.print(Matriz[x][y] + " | ");
+    
+    }}
+	
+    }
+}

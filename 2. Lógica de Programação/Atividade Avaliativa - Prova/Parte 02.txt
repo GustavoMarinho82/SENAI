@@ -1,0 +1,43 @@
+//Java
+
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+    int[] N = {0, 0, 0, 0, 0, 0};
+    
+    int SomaPar = 0;
+    int SomaImpar = 0;
+    
+    
+    Scanner abc = new Scanner(System.in);
+    
+    for (int x=0; x<6; x++){
+        System.out.println("Digite o "+ (x+1)+ "° número");
+            N[x] = abc.nextInt();
+    }
+    
+    
+    System.out.print("\n" + "Números Pares: ");
+        
+        for(int x=0; x<6; x++){
+            if(N[x]%2 == 0){
+                System.out.print(N[x]+ " ");
+                SomaPar+=N[x];}
+            }
+        
+    System.out.println("\n" + "Soma dos Pares: "+ SomaPar+ "\n");
+    
+    
+    System.out.print("Números Ímpares: ");
+        
+        for(int x=0; x<6; x++){
+            if (N[x]%2 == 1){
+                System.out.print(N[x]+ " ");
+                SomaImpar+=N[x];}
+                }
+        
+    System.out.println("\n" + "Soma dos Ímpares: "+ SomaImpar);
+    
+    
+    }
+}

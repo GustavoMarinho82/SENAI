@@ -1,0 +1,19 @@
+m=0
+n=0
+Soma=0
+
+print ("Descubra a Soma dos Números entre Dois Números Positivos \n");
+
+m = int(input("Digite o número maior \n"))
+n = int(input("Digite o número menor \n"))
+
+if (m>0 and n>0):
+    
+    m-=1
+    for m in range (m, n, -1):
+        Soma+=m
+        
+    print("A Soma é: ", Soma)
+
+else:
+    print("ERRO")

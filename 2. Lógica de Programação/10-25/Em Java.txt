@@ -1,0 +1,18 @@
+ATIVIDADE 01
+//Inicio
+
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+      int N;
+      int a=0;
+
+    Scanner tec = new Scanner(System.in);
+    System.out.println("Digite um número inteiro e positivo");
+        N = tec.nextInt();
+
+    for (N=N+1;N>a;a+=2){System.out.println(a);};
+    }
+}
+
+//Fim

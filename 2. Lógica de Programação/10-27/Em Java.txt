@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+	int m;
+	int n;
+	int Soma=0;
+		
+		System.out.println("Descubra a Soma dos Números entre Dois Números Positivos");
+		
+		Scanner abc = new Scanner(System.in);
+		
+		System.out.println("Digite o número maior");
+			m = abc.nextInt();
+		
+		System.out.println("Digite o número menor");
+			n = abc.nextInt();
+		
+	if (m>0 && n>0){
+		
+		m--;
+		for (m=m;m>n;m--) {
+		    Soma+=m;}
+    
+		System.out.println("A Soma é: "+ Soma);
+		                
+		}
+		
+	else {System.out.println("ERRO");}
+    }
+}

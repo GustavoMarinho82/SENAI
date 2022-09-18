@@ -1,0 +1,92 @@
+ATIVIDADE 01
+#Inicio
+
+s=0
+p='a'
+
+print("Descubra seu Novo Salário \n")
+
+p = input("Digite o seu plano de trabalho (em maiusculo) \n"))
+s = int(input("Digite o seu salário \n")))
+
+print("\n")
+
+
+if(p=='A'):
+    print("Seu novo salário é: R$", s*1.10)
+elif(p=='B'):
+    print("Seu novo salário é: R$", s*1.15)
+elif(p=='C'):
+    print("Seu novo salário é: R$", s*1.20)
+else:
+    print("Plano inválido")
+
+#Fim
+
+
+ATIVIDADE 02
+#Inicio
+
+c=0;
+
+print("Descubra o Preço do Lanche \n")
+
+c = int(input("Digite o código do lanche \n"))
+
+print("\n")
+
+
+if(c==100):
+    print("Seu lanche é: Cachorro-Quente \n", "Preço: R$1,20")
+elif(c==101):
+    print("Seu lanche é: Cheeseburger \n", "Preço: R$1,30")
+elif(c==102):
+    print("Seu lanche é: Refrigerante \n", "Preço: R$2,00")
+elif(c==103):
+    print("Seu lanche é: Hambúrger \n", "Preço: R$1,00")
+else:
+    print("Código inválido")
+
+#Fim
+
+
+ATIVIDADE 03
+#Inicio
+
+c=0
+s=0
+n=0
+
+print("Descubra seu Novo Salário \n")
+
+c = int(input("Digite o código do seu cargo \n"))
+s = int(input("Digite o seu salário \n"))
+
+print("\n")
+
+
+if(c==101):
+    n=s*1.05
+    print("Seu antigo salário é: R$", s, "\n")
+    print("Seu novo salário é: R$", n, "\n") 
+    print("Você recebeu um aumento de: R$", n-s)
+    
+elif(c==102):
+    n=s*1.07
+    print("Seu antigo salário é: R$", s, "\n")
+    print("Seu novo salário é: R$", n, "\n") 
+    print("Você recebeu um aumento de: R$", n-s)
+    
+elif(c==103):
+    n=s*1.10
+    print("Seu antigo salário é: R$", s, "\n")
+    print("Seu novo salário é: R$", n, "\n") 
+    print("Você recebeu um aumento de: R$", n-s)
+    
+else:
+    n=s*1.15
+    print("Seu antigo salário é: R$", s, "\n")
+    print("Seu novo salário é: R$", n, "\n") 
+    print("Você recebeu um aumento de: R$", n-s)
+
+#Fim

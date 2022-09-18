@@ -1,0 +1,25 @@
+Matriz = [ [0,0,0,0], [0,0,0,0], [0,0,0,0] ]
+x=0
+y=0
+
+for x in range(3):
+    for y in range(4):
+        
+        print("Linha: ", x+1, " | Coluna: ", y+1)
+        
+        Matriz[x][y] = int(input("Digite o valor \n"))
+        print("\n")
+
+
+for x in range(3):
+    print("Linha ", x+1)
+    
+    for y in range(4):
+        
+        if (Matriz[x][y]<0):
+            print(0)
+        else:
+            print(Matriz[x][y])
+            
+        if (y==3):
+            print("")

@@ -1,0 +1,168 @@
+ATIVIDADE 01
+//Inicio
+
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+      double s;
+      int p;
+      
+
+    System.out.println("Descubra seu Novo Salário \n");
+      
+Scanner a = new Scanner(System.in);
+
+    System.out.println("Digite o seu plano de trabalho (1=A; 2=B; 3=C) \n");
+        p = a.nextInt();
+    
+    System.out.println("Digite o seu salário \n");
+        s = a.nextInt();
+        
+    System.out.println("\n");
+    
+    switch(p){
+        case 1:
+        System.out.println("Seu novo salário é: R$");
+        System.out.println(s*1.10);
+        break;
+        
+        case 2:
+        System.out.println("Seu novo salário é: R$");
+        System.out.println(s*1.15); 
+        break;
+        
+        case 3:
+        System.out.println("Seu novo salário é: R$"); 
+        System.out.println(s*1.20); 
+        break;
+        
+        default:
+        System.out.println("Plano inválido");
+        }
+    }
+}
+
+//Fim
+
+ATIVIDADE 02
+//Inicio
+
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+        
+    int c;
+      
+
+    System.out.println("Descubra o Preço do Lanche \n");
+      
+Scanner a = new Scanner(System.in);
+
+    System.out.println("Digite o código do lanche \n");
+        c = a.nextInt();
+
+    System.out.println("\n");
+    
+    switch(c){
+        case 100:
+        System.out.println("Seu lanche é: Cachorro-Quente \n");
+        System.out.println("Preço: R$1,20");
+        break;
+        
+        case 101:
+        System.out.println("Seu lanche é: Cheeseburger \n");
+        System.out.println("Preço: R$1,30");
+        break;
+        
+        case 102:
+        System.out.println("Seu lanche é: Refrigerante \n"); 
+        System.out.println("Preço: R$2,00");
+        break;
+        
+        case 103:
+        System.out.println("Seu lanche é: Hambúrger \n"); 
+        System.out.println("Preço: R$1,00");
+        break;
+        
+        default:
+        System.out.println("Código inválido");
+        }
+    }
+}
+
+//Fim
+
+ATIVIDADE 03
+//Inicio
+
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+      double s, n;
+      int c;
+      
+
+    System.out.println("Descubra seu Novo Salário \n");
+      
+Scanner a = new Scanner(System.in);
+
+    System.out.println("Digite o código do seu cargo \n");
+        c = a.nextInt();
+    
+    System.out.println("Digite o seu salário \n");
+        s = a.nextInt();
+        
+    System.out.println("\n");
+    
+    switch(c){
+        case 101:
+            n=s*1.05;
+        System.out.println("Seu antigo salário é: R$");
+        System.out.println(s);
+        System.out.println("\n");
+        System.out.println("Seu novo salário é: R$");
+        System.out.println(n);
+        System.out.println("\n");
+        System.out.println("Você recebeu um aumento de: R$");
+        System.out.println(n-s);
+        break;
+        
+        case 102:
+            n=s*1.07;
+        System.out.println("Seu antigo salário é: R$");
+        System.out.println(s);
+        System.out.println("\n");
+        System.out.println("Seu novo salário é: R$");
+        System.out.println(n);
+        System.out.println("\n");
+        System.out.println("Você recebeu um aumento de: R$");
+        System.out.println(n-s);
+        break;
+        
+        case 103:
+            n=s*1.10;
+        System.out.println("Seu antigo salário é: R$");
+        System.out.println(s);
+        System.out.println("\n");
+        System.out.println("Seu novo salário é: R$");
+        System.out.println(n);
+        System.out.println("\n");
+        System.out.println("Você recebeu um aumento de: R$");
+        System.out.println(n-s);
+        break;
+        
+        default:
+            n=s*1.15;
+        System.out.println("Seu antigo salário é: R$");
+        System.out.println(s);
+        System.out.println("\n");
+        System.out.println("Seu novo salário é: R$");
+        System.out.println(n);
+        System.out.println("\n");
+        System.out.println("Você recebeu um aumento de: R$");
+        System.out.println(n-s);
+        }
+    }
+}
+
+//Fim
